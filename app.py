@@ -53,11 +53,11 @@ def sentiment_analysis():
     return(render_template("sentiment_analysis.html"))
 
 
-@app.route("/sentiment_analysis_result",methods=["GET","POST"])
+@app.route("/sentiment_result_analysis",methods=["GET","POST"])
 def sentiment_analysis_result():
     q = request.form.get("q")
     r = textblob.TextBlob(q).sentiment
-    return(render_template("sentiment_analysis_result.html",r=r))
+    return(render_template("sentiment_result_analysis.html",r=r))
 
 
 @app.route("/q1",methods=["GET","POST"])

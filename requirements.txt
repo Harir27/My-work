@@ -1,5 +1,5 @@
 flask
 gunicorn
-google-generativeal
-numpuy
+google-generativeai
+numpy
 textblob
